@@ -1,8 +1,8 @@
 import React from "react";
-import Form from '../Form/Form'
-import ContactList from '../ContactList/ContactList'
-import FilterList from '../FilterList/FilterList'
-import css from './Phonebook.module.css'
+import Form from "../Form/Form";
+import ContactList from "../ContactList/ContactList";
+import FilterList from "../FilterList/FilterList";
+import css from "./Phonebook.module.css";
 export default function Phonebook() {
   return (
     <div className={css.section}>
@@ -12,5 +12,5 @@ export default function Phonebook() {
       <FilterList />
       <ContactList />
     </div>
-  )
+  );
 }

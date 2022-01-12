@@ -1,13 +1,9 @@
+import "./App.css";
 
-import './App.css';
-
-
-import Phonebook from './components/Phonebook/Phonebook'
+import Phonebook from "./components/Phonebook/Phonebook";
 
 function App() {
-  return (
-      <Phonebook />
-  );
+  return <Phonebook />;
 }
 
 export default App;

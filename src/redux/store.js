@@ -11,7 +11,7 @@ import {
   REGISTER,
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import phonebookReducer from "../contacts/contactsReducer";
+import phonebookReducer from "./contacts/contactsReducer";
 
 const middleware = (getDefaultMiddleware) =>
   getDefaultMiddleware({
@@ -26,10 +26,13 @@ const phonebookPersistConfig = {
   blacklist: ["filter"],
 };
 
-const persistedReducer = persistReducer(phonebookPersistConfig, phonebookReducer)
+const persistedReducer = persistReducer(
+  phonebookPersistConfig,
+  phonebookReducer
+);
 
 const store = configureStore({
-  reducer: {contacts: persistedReducer},
+  reducer: { contacts: persistedReducer },
   middleware,
 });
 

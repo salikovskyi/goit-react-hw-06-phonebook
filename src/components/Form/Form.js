@@ -2,13 +2,13 @@ import React from "react";
 import { useState } from "react";
 import css from "./Form.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { addContact } from "../../contacts/contactsAction";
+import { addContact } from "../../redux/contacts/contactsAction";
 
 export default function Form() {
   const [state, setState] = useState({ name: "", number: "" });
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
-  const items = useSelector(state => state.contacts.items);
+  const items = useSelector((state) => state.contacts.items);
   const { name, number } = state;
 
   const onInputChange = (e) => {
@@ -22,10 +22,10 @@ export default function Form() {
       items.some((item) => item.name.toLowerCase() === state.name.toLowerCase())
     ) {
       alert("УЖЕ ЕСТЬ ТАКОЙ КОНТАКТ");
-      setState({ ...state, name: '' });
+      setState({ ...state, name: "" });
     } else {
-      dispatch(addContact(state))
-      setState({name: '', number: ''})
+      dispatch(addContact(state));
+      setState({ name: "", number: "" });
     }
   };
   return (
