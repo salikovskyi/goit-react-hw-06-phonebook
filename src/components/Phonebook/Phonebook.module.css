@@ -1,0 +1,10 @@
+.title {
+    font-size: 70px;
+    font-weight: 700;
+    /* margin: 30px 0; */
+    text-transform: uppercase;
+    width: max-content;
+    margin: 0 auto;
+    padding: 30px 0;
+    
+}

@@ -1,0 +1,49 @@
+.contactlist {
+    list-style: none;
+    margin-top: 20px;
+    width: max-content;
+    margin: 0 auto;
+}
+
+
+.btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+  
+    color: #ffffff;
+    background-color: #D291BC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    padding: 10px 32px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #957DAD;
+}
+
+.name {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.number {
+    font-size: 18px;
+    width: 200px;
+    margin-right: 30px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
